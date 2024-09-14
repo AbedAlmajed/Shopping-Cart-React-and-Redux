@@ -68,7 +68,7 @@ const ProductList = () => {
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{product.name}</h3>
               <p className="text-gray-700 mb-2">{product.description}</p>
-              <p className="text-green-600 font-bold mb-4">${product.price.toFixed(2)}</p>
+              <p className="text-blue-700 font-bold mb-4">${product.price.toFixed(2)}</p>
               <button
                 onClick={() => handleAddToCart(product)}
                 className="w-full bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-105"

@@ -12,21 +12,21 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Add a new product (for testing purposes)
-router.post('/', async (req, res) => {
-  const product = new Product({
-    name: req.body.name,
-    price: req.body.price,
-    description: req.body.description,
-    imageUrl: req.body.imageUrl,
-  });
+// // Add a new product (for testing purposes)
+// router.post('/', async (req, res) => {
+//   const product = new Product({
+//     name: req.body.name,
+//     price: req.body.price,
+//     description: req.body.description,
+//     imageUrl: req.body.imageUrl,
+//   });
 
-  try {
-    const newProduct = await product.save();
-    res.status(201).json(newProduct);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
-  }
-});
+//   try {
+//     const newProduct = await product.save();
+//     res.status(201).json(newProduct);
+//   } catch (err) {
+//     res.status(400).json({ message: err.message });
+//   }
+// });
 
 module.exports = router;
